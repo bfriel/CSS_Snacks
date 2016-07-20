@@ -1,0 +1,90 @@
+.wrap {
+  margin-left: 180px;
+  margin-top: 180px;
+  height: 400px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+.wrap .cube {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+
+.wrap .cube > div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  border: 2px solid #fff;
+  line-height: 170px;
+  font-family: 'Slabo 27px', serif;
+  font-size: 90px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.wrap .front { transform: translateZ(100px); }
+.wrap .back { transform: translateZ(-100px) rotateY(180deg); }
+
+.wrap .right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+
+.wrap .left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+
+.wrap .top {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.wrap .bottom {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+@keyframes rotate {
+  from { transform: rotateX(0deg) rotateY(0deg); }
+  to { transform: rotateX(-360deg) rotateY(-360deg); }
+}
+
+.wrap .cube { animation: rotate 20s infinite linear; }
+.wrap:hover .front { transform: translateZ(200px); }
+.wrap:hover .back { transform: translateZ(-200px) rotateY(180deg); }
+
+.wrap:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.wrap:hover .left {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrap:hover .top {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrap:hover .bottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+
+.wrap .cube > div { transition: transform 0.2s ease-in; }
+
+.wrap .front  { background: rgba( 231, 71, 32, 0.9 ); }
+.wrap .back   { background: rgba( 222, 10, 22, 0.9 ); }
+.wrap .top    { background: rgba( 0, 153, 76, 0.9 ); }
+.wrap .bottom { background: rgba( 76, 0, 153, 0.9 ); }
+.wrap .left   { background: rgba( 231, 222, 33, 0.9 ); }
+.wrap .right  { background: rgba( 32, 71, 231, 0.9 ); }
+
+.wrap .cube > div:hover {
+  box-shadow: 5px 5px 5px 5px rgb(100, 100, 100);
+}

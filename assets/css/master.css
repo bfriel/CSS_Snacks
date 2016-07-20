@@ -1,0 +1,11 @@
+.orange {
+  background-color: rgb(231, 71, 32);
+  color: rgb(226, 235, 205);
+  font-family: "Droid Sans", Helvetica, sans-serif;
+}
+
+.white {
+  background-color: rgb(226, 235, 205);
+  color: rgb(231, 71, 32);
+  font-family: "Droid Sans", Helvetica, sans-serif;
+}
