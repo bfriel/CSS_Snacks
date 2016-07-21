@@ -1,0 +1,88 @@
+.flip-container {
+  perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .flip-front, .flip-back {
+  width: 320px;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide flip-back of pane during swap */
+.flip-front, .flip-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* flip-front pane, placed above back */
+.flip-front {
+  background-color: green;
+  color: white;
+  z-index: 2;
+  border-radius: 20px;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.flip-back {
+  transform: rotateY(180deg);
+  background-image: url('../images/aceofspades.png');
+  background-size: 100% 100%;
+}
+
+
+/*h1 {
+  margin: 0;
+}*/
+
+/*.card-container {
+  perspective: 700;
+}*/
+
+/*.card {
+  position: relative;;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 200px;
+  backface-visibility: hidden;
+}*/
+
+/*.card-front, .card-back {
+  background: #5677fc;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+
+/*.card-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}*/
+
+/*.card:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}*/

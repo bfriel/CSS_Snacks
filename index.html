@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/master.css" charset="utf-8">
     <link rel="stylesheet" href="assets/css/3D-cube.css" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/card.css" charset="utf-8">
     <title>CSS Snacks</title>
   </head>
   <body>
@@ -21,24 +22,68 @@
       </div>
     </section>
 
-    <section id="3d-box" class="white">
+    <section class="white">
+    </section>
+
+    <section class="orange">
+    </section>
+
+    <section class="white">
       <div class="content">
   			<br><br>
-  			<h2>3D box</h2>
+  			<h2>3D Shapes</h2>
   			<br><br><br>
-        
-			<div class="wrap">
+
+    <div class="pyramid-container">
+    <div class="pyramid-axis">
+
+      <div class="pyramid-wall front"></div>
+      <div class="pyramid-wall back"></div>
+      <div class="pyramid-wall left"></div>
+      <div class="pyramid-wall right"></div>
+
+      <div class="bottom"></div>
+      <div class="shadow"></div>
+    </div>
+
+			<div class="cube-container">
 			  <div class="cube">
-			    <div class="front">1</div>
-			    <div class="back">2</div>
-			    <div class="top">3</div>
-			    <div class="bottom">4</div>
-			    <div class="left">5</div>
-			    <div class="right">6</div>
+			    <div class="front"></div>
+			    <div class="back"></div>
+			    <div class="top"></div>
+			    <div class="bottom"></div>
+			    <div class="left"></div>
+			    <div class="right"></div>
 			  </div>
 			</div>
 
 		</div>
 	</section>
+
+  <section class="orange">
+    <div class="content">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="flip-front"><h3>Is This Your Card?</h3></div>
+          <div class="flip-back"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="card-container">
+    <div class="card">
+      <div class="card-front">
+        <h1>Hello</h1>
+        <div class="card-back">
+          <h1>Goodbye</h1>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
   </body>
 </html>

@@ -1,11 +1,26 @@
-.orange {
-  background-color: rgb(231, 71, 32);
-  color: rgb(226, 235, 205);
+section {
+  min-height: 200px;
   font-family: "Droid Sans", Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.orange {
+  background: rgb(231, 71, 32);
+  color: rgb(226, 235, 205);
+
 }
 
 .white {
-  background-color: rgb(226, 235, 205);
+  background: rgb(226, 235, 205);
   color: rgb(231, 71, 32);
-  font-family: "Droid Sans", Helvetica, sans-serif;
+}
+
+.content {
+  margin: auto;
+  padding: 20px;
+  width: 600px;
+}
+
+.content h2 {
+  text-align: center;
 }
