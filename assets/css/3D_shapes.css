@@ -1,3 +1,5 @@
+/*CUBE*/
+
 .cube-container {
   margin-top: 180px;
   height: 400px;
@@ -87,4 +89,45 @@
   box-shadow:2px 2px 10px 10px #C9C9C9;
  -webkit-box-shadow:2px 2px 10px 10px #C9C9C9;
  -moz-box-shadow:2px 2px 10px 10px #C9C9C9;
+}
+
+
+
+/*PYRAMID*/
+
+.pyramid-container {
+  margin-top: 180px;
+  height: 400px;
+  perspective: 2000px;
+}
+
+.pyramid {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+
+.pyramid-container .pyramid div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid inherit;
+  /*border: 2px solid rgba(255, 255, 255, 0.9);*/
+  line-height: 170px;
+  font-size: 90px;
+  text-align: center;
+  /*font-weight: bold;*/
+  color: white;
+}
+
+.pyramid-face {
+  background: blue;
+}
+
+.pyramid-base {
+  background: red;
 }
