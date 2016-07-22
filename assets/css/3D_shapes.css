@@ -28,7 +28,7 @@
   /*font-weight: bold;*/
   color: white;
 }
-.cube-container .front { transform: translateZ(100px); }
+.cube-container .front { transform: translateZ(100px) translateX(0px) rotateY(0deg) ; }
 .cube-container .back { transform: translateZ(-100px) rotateY(180deg); }
 
 .cube-container .right {
@@ -57,23 +57,23 @@
 }
 
 .cube-container .cube { animation: rotate 30s infinite linear; }
-.front:hover { transform: translateZ(200px); }
-.back:hover { transform: translateZ(-200px) rotateY(180deg); }
+.front:hover { transform: rotateY(290deg) translateZ(130px) translateX(100px) ; }
+.back:hover { transform: translateZ(-120px) rotateY(200deg); }
 
 .right:hover {
-  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+  transform: rotateY(-200deg) translateZ(100px) translateX(100px);
 }
 
 .left:hover {
-  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+  transform: rotateY(200deg) translateZ(100px) translateX(-100px);
 }
 
 .top:hover {
-  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+  transform: rotateX(-200deg) translateZ(100px) translateY(-100px);
 }
 
 .bottom:hover {
-  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+  transform: rotateX(200deg) translateZ(100px) translateY(100px);
 }
 
 .cube-container .cube > div { transition: transform 0.2s ease-in; }
