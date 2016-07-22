@@ -53,7 +53,7 @@
 
 @keyframes rotate {
   from { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  to { transform: rotateX(0deg) rotateY(360deg) rotateZ(720deg);  }
+  to { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);  }
 }
 
 .cube-container .cube { animation: rotate 60s infinite linear; }
