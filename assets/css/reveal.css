@@ -90,28 +90,30 @@
 }*/
 
 
-#hidden-message {
-  margin: 0;
-}
-
-.reveal-wrapper {
+.door-wrapper {
+  height: 500px;
   margin: 200px;
   position: relative;
   overflow-x: hidden;
 }
 
-.reveal-wrapper:hover .reveal-top {
+.door-wrapper:hover .door-top {
   left: -100%;
 }
 
-.reveal-content {
-  padding: 100px;
+.door-content {
+  height: 96%;
   color: #000;
   background: #FFF;
+  text-align: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .5) inset;
 }
 
-.reveal-top {
+#hidden-message {
+ vertical-align: middle;
+}
+
+.door-top {
   background-image: url('../images/GlassDoor.png');
   background-size: 100% 100%;
   width: 100%;

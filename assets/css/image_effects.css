@@ -1,0 +1,26 @@
+img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.blur-container {
+  height: 400px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.blur-container img {
+  -webkit-webkit-transition: all 1s ease;
+  -moz-webkit-transition: all 1s ease;
+  -ms-webkit-transition: all 1s ease;
+  -o-webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.blur-container img:hover {
+  -webkit-filter: blur(3px);
+  /*-webkit-filter: invert(40%);*/
+  /*-webkit-filter: hue-rotate(270deg);*/
+}

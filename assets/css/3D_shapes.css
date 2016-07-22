@@ -86,9 +86,9 @@
 
 .cube-container .cube > div:hover {
   /*box-shadow: 5px 5px 5px 5px rgb(100, 100, 100);*/
-  box-shadow:2px 2px 10px 10px #C9C9C9;
- -webkit-box-shadow:2px 2px 10px 10px #C9C9C9;
- -moz-box-shadow:2px 2px 10px 10px #C9C9C9;
+  /*box-shadow:2px 2px 10px 10px #C9C9C9;*/
+ /*-webkit-box-shadow:2px 2px 10px 10px #C9C9C9;
+ -moz-box-shadow:2px 2px 10px 10px #C9C9C9;*/
 }
 
 
