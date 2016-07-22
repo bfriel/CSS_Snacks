@@ -2,18 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/master.css" charset="utf-8">
     <link rel="stylesheet" href="assets/css/3D_shapes.css" charset="utf-8">
     <link rel="stylesheet" href="assets/css/reveal.css" charset="utf-8">
     <link rel="stylesheet" href="assets/css/image_effects.css" charset="utf-8">
     <link rel="stylesheet" href="assets/css/parallax.css" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/icons.css" charset="utf-8">
     <title>CSS Snacks</title>
   </head>
   <body>
     <section class="header orange">
       <div id="title">
         <h1>CSS Snacks</h1>
-        <h3>Bite-sized features made entirely from HTML/CSS</h3>
+        <h3>Bite-sized features made entirely with HTML/CSS</h3>
       </div>
       <div id="brian-links">
         <ul>
@@ -26,27 +28,39 @@
 
     <section class="white">
       <div class="toc">
-        Table of Contents
+        <h2>Contents</h2>
+        <ul>
+          <li>Icon Effects</li>
+          <li>Image Effects</li>
+          <li>Transition Effects</li>
+          <li>3D Effects</li>
+        </ul>
       </div>
+      <p>hi</p>
     </section>
 
     <section class="orange">
-      <div class="">
-        Useful effects like tooltip, hovers, etc.
+      <h2>Icon Effects</h2>
+      <div class="icons">
+        <div>
+          <img class="hvr-float-shadow" src="assets/images/snacks.png" width="120" height="120">
+          <p>Float with Shadow</p>
+        </div>
       </div>
     </section>
 
     <section class="white">
-      <h2>Parallax Effect</h2>
+      <h2>Image Effects</h2>
+      <br></br>
+      <h3>Parallax</h3>
       <div class="parallax">
         <div class="plax-image"></div>
-
       </div>
       <p>jQuery scroll listeners can slow loading time. No need for that! Code: </p>
-      
+
+      <h3>Blur</h3>
       <div class="blur-container">
-        <h2>Blur Images</h2>
-        <img src="assets/images/SFSunset.jpg" alt="San Francisco">
+        <img class="blur-image" src="assets/images/SFSunset.jpg" alt="San Francisco">
       </div>
 
     </section>
@@ -54,19 +68,20 @@
     <section class="orange">
       <div class="content">
 
-        <h2>Is This Your Card?</h2>
+        <h2>Flipping Effect</h2>
         <div class="card-container" ontouchstart="this.classList.toggle('hover');">
           <div class="card">
             <div class="card-front"></div>
             <div class="card-back"></div>
           </div>
         </div>
+        <p> Is this your card? </p>
 
-        <h2>Knock Knock...</h2>
+        <h2>Sliding Effect</h2>
         <div class="container">
           <div class="door-wrapper">
             <div class="door-content">
-              <h3 id="hidden-message">Hello</h3>
+              <h3 id="hidden-message">Open Me!</h3>
             </div>
             <div class="door-top"></div>
           </div>

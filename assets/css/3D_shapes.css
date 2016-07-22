@@ -53,10 +53,10 @@
 
 @keyframes rotate {
   from { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  to { transform: rotateX(-360deg) rotateY(-0deg) rotateZ(-360deg);  }
+  to { transform: rotateX(0deg) rotateY(360deg) rotateZ(720deg);  }
 }
 
-.cube-container .cube { animation: rotate 30s infinite linear; }
+.cube-container .cube { animation: rotate 60s infinite linear; }
 .front:hover { transform: rotateY(290deg) translateZ(130px) translateX(100px) ; }
 .back:hover { transform:  translateZ(-270px) rotateY(240deg) translateX(160px); }
 /*.back:hover {

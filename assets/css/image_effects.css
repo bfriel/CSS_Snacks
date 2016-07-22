@@ -1,4 +1,4 @@
-img {
+.blur-image {
   height: 100%;
   width: 100%;
   border: 1px solid black;
@@ -8,7 +8,7 @@ img {
   height: 400px;
   width: 1000px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 10px 100px 100px 100px;
 }
 
 .blur-container img {
