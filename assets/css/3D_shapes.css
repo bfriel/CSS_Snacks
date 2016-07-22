@@ -29,7 +29,7 @@
   color: white;
 }
 .cube-container .front { transform: translateZ(100px) translateX(0px) rotateY(0deg) ; }
-.cube-container .back { transform: translateZ(-100px) rotateY(180deg); }
+.cube-container .back { transform: translateZ(-100px) rotateY(180deg) translateX(0px); }
 
 .cube-container .right {
   transform: rotateY(-270deg) translateX(100px);
@@ -53,12 +53,15 @@
 
 @keyframes rotate {
   from { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  to { transform: rotateX(-360deg) rotateY(-360deg) rotateZ(0deg);  }
+  to { transform: rotateX(-360deg) rotateY(-0deg) rotateZ(-360deg);  }
 }
 
 .cube-container .cube { animation: rotate 30s infinite linear; }
 .front:hover { transform: rotateY(290deg) translateZ(130px) translateX(100px) ; }
-.back:hover { transform: translateZ(-120px) rotateY(200deg); }
+.back:hover { transform:  translateZ(-270px) rotateY(240deg) translateX(160px); }
+/*.back:hover {
+  transform: roatateY(-200deg) translateZ(100px) translateX(100px);
+}*/
 
 .right:hover {
   transform: rotateY(-200deg) translateZ(100px) translateX(100px);
@@ -69,7 +72,7 @@
 }
 
 .top:hover {
-  transform: rotateX(-200deg) translateZ(100px) translateY(-100px);
+  transform: rotateX(-200deg) translateZ(100px) translateY(-100px)
 }
 
 .bottom:hover {
@@ -81,6 +84,11 @@
 .cube-container .front, .back, .top, .bottom, .left, .right  {
   background-image: url('../images/woodcrate.jpg');
   background-size: 100% 100%;
+ }
+
+ .cube-container .puppy {
+   background-image: url('../images/CookieMonster.png');
+   background-size: 100% 100%;
  }
 
 
