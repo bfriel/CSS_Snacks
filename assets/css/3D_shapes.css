@@ -57,6 +57,7 @@
 }
 
 .cube-container .cube { animation: rotate 60s infinite linear; }
+/*.cube-container .cube .cookie-monster  { animation: rotate 60s infinite linear; }*/
 .front:hover { transform: rotateY(290deg) translateZ(130px) translateX(100px) ; }
 .back:hover { transform:  translateZ(-270px) rotateY(240deg) translateX(160px); }
 /*.back:hover {
@@ -86,7 +87,7 @@
   background-size: 100% 100%;
  }
 
- .cube-container .puppy {
+ .cube-container .cookie-monster {
    background-image: url('../images/CookieMonster.png');
    background-size: 100% 100%;
  }
