@@ -1,8 +1,10 @@
-/*.parallax {
-  height: 100%;
-}*/
+.parallax {
+  /*height: 100%;*/
+  padding: 10px 100px 100px 100px;
+}
 
 .plax-image {
+  border: 1px solid black;
   height: 50vh;
 
   text-indent: -9999px;

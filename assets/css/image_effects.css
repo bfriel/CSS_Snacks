@@ -5,8 +5,8 @@
 }
 
 .blur-container {
-  height: 400px;
-  width: 1000px;
+  /*height: 400px;
+  width: 1000px;*/
   margin: 0 auto;
   padding: 10px 100px 100px 100px;
 }
@@ -23,4 +23,28 @@
   -webkit-filter: blur(3px);
   /*-webkit-filter: invert(40%);*/
   /*-webkit-filter: hue-rotate(270deg);*/
+}
+
+/*FOCUS IMAGE*/
+
+.focus {
+  margin: 0 auto;
+  padding: 10px 100px 100px 100px;
+
+}
+
+.focus-image {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -ms-transition: all 1s ease;
+         -o-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.focus-container:hover .focus-image{
+  border-radius: 50%;
 }
