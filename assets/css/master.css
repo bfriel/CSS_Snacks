@@ -43,6 +43,10 @@ p {
   padding: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
   min-height: 200px;
   font-family: "Droid Sans", Helvetica, sans-serif;
