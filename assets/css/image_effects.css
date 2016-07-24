@@ -30,7 +30,6 @@
 .focus {
   margin: 0 auto;
   padding: 10px 100px 100px 100px;
-
 }
 
 .focus-image {
@@ -47,4 +46,8 @@
 
 .focus-container:hover .focus-image{
   border-radius: 50%;
+  /*border: 50px solid black;*/
+}
+
+.focus-container:hover {
 }
