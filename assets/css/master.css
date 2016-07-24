@@ -24,6 +24,10 @@ h3 {
   font-size: 24px;
 }
 
+p {
+  text-align: center;
+}
+
 #title {
   padding-top: 50px;
 }
@@ -32,6 +36,14 @@ section {
   min-height: 200px;
   font-family: "Droid Sans", Helvetica, sans-serif;
   font-weight: 100;
+}
+
+a {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: rgb(231, 71, 32);
 }
 
 .header {
