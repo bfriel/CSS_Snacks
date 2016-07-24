@@ -101,16 +101,34 @@
   left: -100%;
 }
 
+.door-wrapper:hover #hidden-message {
+  color: black;
+}
+
+.door-wrapper:hover #visible-message {
+  color: rgb(255, 255, 255);
+}
+
 .door-content {
-  height: 96%;
+  height: 100%;
   color: #000;
   background: #FFF;
   text-align: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .5) inset;
 }
 
+#visible-message {
+  /*vertical-align: middle;*/
+ margin: 0;
+ padding-top: 175px;
+ transition: 0.6s ease;
+}
+
 #hidden-message {
- vertical-align: middle;
+  margin: 0;
+  padding-top: 125px;
+  color: rgb(255, 255, 255);
+  transition: 0.6s ease;
 }
 
 .door-top {
@@ -125,3 +143,43 @@
   transition: left 0.6s ease;
 
 }
+
+
+/*ROTATE OUT*/
+
+/*@-webkit-keyframes rotateOut {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOut {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
+
+.rotateOut {
+  -webkit-animation-name: rotateOut;
+  animation-name: rotateOut;
+}*/
