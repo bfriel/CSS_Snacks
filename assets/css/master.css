@@ -22,6 +22,7 @@ h3 {
   text-align: center;
   font-weight: 100;
   font-size: 24px;
+  padding-top: 50px;
 }
 
 p {
@@ -32,13 +33,23 @@ p {
   padding-top: 50px;
 }
 
+#brian-links {
+  width: 145px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+#brian-links a {
+  padding: 20px;
+}
+
 section {
   min-height: 200px;
   font-family: "Droid Sans", Helvetica, sans-serif;
   font-weight: 100;
 }
 
-a {
+.contents {
   display: block;
   padding-top: 10px;
   text-align: center;
@@ -70,4 +81,8 @@ a {
 
 .content h2 {
   text-align: center;
+}
+
+.extra-padding {
+  padding-top: 50px;
 }
