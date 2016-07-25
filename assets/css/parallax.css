@@ -9,12 +9,13 @@
 
 .plax-image {
   border: 1px solid black;
-  height: 50vh;
+  /*height: 50vh;*/
+  height: 415px;
 
   text-indent: -9999px;
 
   background-image: url(
-    '../images/snowmountain.jpeg'
+    '../images/iceclimb.jpg'
     );
 
   /* fix background */

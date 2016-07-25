@@ -43,6 +43,10 @@ p {
   padding: 20px;
 }
 
+#tagline {
+  padding: 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,4 +93,8 @@ section {
 
 .extra-padding {
   padding-top: 50px;
+}
+
+.content a:hover {
+  text-decoration: underline;
 }

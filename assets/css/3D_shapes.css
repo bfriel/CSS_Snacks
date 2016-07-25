@@ -104,7 +104,7 @@
 
 /*PYRAMID*/
 
-.pyramid-container {
+/*.pyramid-container {
   margin-top: 180px;
   height: 400px;
   perspective: 2000px;
@@ -126,17 +126,17 @@
   width: 100%;
   border: 2px solid inherit;
   /*border: 2px solid rgba(255, 255, 255, 0.9);*/
-  line-height: 170px;
+  /*line-height: 170px;
   font-size: 90px;
-  text-align: center;
+  text-align: center;*/
   /*font-weight: bold;*/
-  color: white;
-}
-
+  /*color: white;
+}*/
+/*
 .pyramid-face {
   background: blue;
 }
 
 .pyramid-base {
   background: red;
-}
+}*/*/
