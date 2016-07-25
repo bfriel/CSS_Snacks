@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/image_effects.css" charset="utf-8">
     <link rel="stylesheet" href="assets/css/parallax.css" charset="utf-8">
     <link rel="stylesheet" href="assets/css/icons.css" charset="utf-8">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <title>CSS Snacks</title>
   </head>
   <body>
@@ -97,11 +99,75 @@
       <div class="parallax">
         <div class="plax-image"></div>
       </div>
-      <p>jQuery scroll listeners can slow loading time. No need for that! Code: </p>
+      <button class="toggle-code orange-button">show code</button>
+      <div class="show-code">
+        HTML:
+        <pre class="prettyprint">
+
+          &lt;div class="parallax"&gt;
+            &lt;div class="plax-image"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        </pre>
+        <br><br>
+        CSS:
+        <pre class="prettyprint">
+
+          .parallax {
+            padding: 10px 100px 100px 100px;
+          }
+
+          .plax-image {
+            border: 1px solid black;
+            height: 415px;
+            background-image: url('../images/iceclimb.jpg');
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: 100% 100%;
+          }
+        </pre>
+        <br><br><br>
+      </div>
+
+    </div>
 
       <h3>Blur</h3>
       <div class="blur-container">
         <img class="blur-image" src="assets/images/SFSunset.jpg" />
+      </div>
+      <button class="toggle-code orange-button">show code</button>
+      <div class="show-code">
+        HTML:
+        <pre class="prettyprint">
+
+          &lt;div class="blur-container"&gt;
+            &lt;img class="blur-image" src="assets/images/SFSunset.jpg" /&gt;
+          &lt;/div&gt;
+        </pre>
+        <br><br>
+        CSS:
+        <pre class="prettyprint">
+
+          .blur-container {
+            margin: 0 auto;
+            padding: 10px 100px 100px 100px;
+          }
+
+          .blur-image {
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+            -webkit-webkit-transition: all 1s ease;
+            -moz-webkit-transition: all 1s ease;
+            -ms-webkit-transition: all 1s ease;
+            -o-webkit-transition: all 1s ease;
+            transition: all 1s ease;
+          }
+
+          .blur-image:hover {
+            -webkit-filter: blur(3px);
+          }
+        </pre>
+        <br><br><br>
       </div>
 
       <h3>Focus</h3>
@@ -110,6 +176,38 @@
           <img class="focus-image" src="assets/images/surfing.jpeg" />
         </div>
       </div>
+      <button class="toggle-code orange-button">show code</button>
+      <div class="show-code">
+        HTML:
+        <pre class="prettyprint">
+
+          &lt;div class="focus-container"&gt;
+            &lt;img class="focus-image" src="assets/images/surfing.jpeg" /&gt;
+          &lt;/div&gt;
+        </pre>
+        <br><br>
+        CSS:
+        <pre class="prettyprint">
+
+          .focus-image {
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+          }
+
+          .focus-container:hover .focus-image{
+            border-radius: 50%;
+            border: 10px solid black;
+          }
+        </pre>
+        <br><br><br>
+      </div>
+      <br><br><br>
     </section>
 
     <section class="orange">
@@ -162,16 +260,24 @@
 
 
 
-  <!-- <div class="card-container">
-    <div class="card">
-      <div class="card-front">
-        <h1>Hello</h1>
-        <div class="card-back">
-          <h1>Goodbye</h1>
-        </div>
-      </div>
-    </div>
-  </div> -->
+<!-- jQuery only for showing code! -->
+<script type="text/javascript">
+  $(".toggle-code").on("click", function () {
+    let $button = $(this);
+    let display = $button.next(".show-code").css("display");
+    let text = $button.text();
+    $button.next(".show-code").css("display", toggleDisplay(display));
+    $button.text(toggleVal(text));
+  });
+
+  function toggleVal(val) {
+    return (val == "show code") ? "hide code" : "show code";
+  }
+
+  function toggleDisplay(val) {
+    return (val == "block") ? "hidden" : "block";
+  }
+</script>
 
 
 

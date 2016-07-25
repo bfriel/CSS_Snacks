@@ -3,60 +3,14 @@
 }
 
 .parallax {
-  /*height: 100%;*/
   padding: 10px 100px 100px 100px;
 }
 
 .plax-image {
   border: 1px solid black;
-  /*height: 50vh;*/
   height: 415px;
-
-  text-indent: -9999px;
-
-  background-image: url(
-    '../images/iceclimb.jpg'
-    );
-
-  /* fix background */
+  background-image: url('../images/iceclimb.jpg');
   background-attachment: fixed;
-
-  /* center it */
   background-position: center center;
-
-  /* Scale it nicely to the element */
   background-size: 100% 100%;
-
-  /* just make it look a bit better ;) */
-  &:nth-child(2n) {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5) inset;
-  }
-}
-
-.plax-1 {
-}
-
-.plax-2 {
-  background-image: url(
-    https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax2.jpg
-  );
-}
-
-.plax-3 {
-  background-image: url(
-    https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax3.jpg
-  );
-}
-
-.plax-4 {
-  height: 100vh;
-
-  background-image: url(
-    https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg
-  );
-}
-
-p {
-  margin: 0;
-  padding: 25px;
 }
