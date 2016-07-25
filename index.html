@@ -88,6 +88,35 @@
         </div>
 
       </div>
+      <button class="toggle-code white-button">show code</button>
+      <div class="show-code">
+        Rotate HTML:
+        <pre class="prettyprint">
+
+          &lt;div class="rotate"&gt;
+            &lt;img src="assets/images/pizza.png" width="120" height="120" /&gt;
+          &lt;/div&gt;
+        </pre>
+        <br><br>
+        Rotate CSS:
+        <pre class="prettyprint">
+
+          .rotate {
+            display: inline-block;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-transition: transform 0.3s;
+            transition: transform 0.3s;
+          }
+
+          .rotate:hover {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
+        </pre>
+        <br><br><br>
+      </div>
+      <br><br><br>
     </section>
 
     <section class="white">

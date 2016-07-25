@@ -29,14 +29,9 @@
 /* Float Shadow */
 .float-shadow {
   display: inline-block;
-  vertical-align: middle;
+  position: relative;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -44,8 +39,8 @@
 }
 
 .float-shadow:before {
-  pointer-events: none;
   position: absolute;
+  pointer-events: none;
   z-index: -1;
   content: '';
   top: 100%;
@@ -55,23 +50,20 @@
   opacity: 0;
   background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  /* W3C */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
-.float-shadow:hover, .float-shadow:focus, .float-shadow:active {
+.float-shadow:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
-  /* move the element up by 5px */
 }
 
-.float-shadow:hover:before, .float-shadow:focus:before, .float-shadow:active:before {
+.float-shadow:hover:before {
   opacity: 1;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
-  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
 
@@ -142,17 +134,12 @@
 
 .wobble-top {
   display: inline-block;
-  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
 }
-.wobble-top:hover, .wobble-top:focus, .wobble-top:active {
+.wobble-top:hover {
   -webkit-animation-name: wobble-top;
   animation-name: wobble-top;
   -webkit-animation-duration: 1s;
@@ -214,15 +201,11 @@
 
 .hang {
   display: inline-block;
-  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
 }
-.hang:hover, .hang:focus, .hang:active {
+
+.hang:hover {
   -webkit-animation-name: hang-sink, hang;
   animation-name: hang-sink, hang;
   -webkit-animation-duration: .3s, 1.5s;
@@ -241,41 +224,18 @@
 
 .grow {
   display: inline-block;
-  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.grow:hover, .grow:focus, .grow:active {
+.grow:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* Glow */
-.glow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-.glow:hover, .glow:focus, .glow:active {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-}
 
 /* Buzz */
 @-webkit-keyframes buzz {
@@ -304,15 +264,12 @@
 
 .buzz {
   display: inline-block;
-  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
 }
-.buzz:hover, .buzz:focus, .buzz:active {
+
+.buzz:hover {
   -webkit-animation-name: buzz;
   animation-name: buzz;
   -webkit-animation-duration: 0.15s;
@@ -327,19 +284,13 @@
 
 .rotate {
   display: inline-block;
-  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
 }
-.rotate:hover, .rotate:focus, .rotate:active {
+
+.rotate:hover {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
