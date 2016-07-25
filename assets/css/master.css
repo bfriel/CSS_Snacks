@@ -37,6 +37,43 @@ pre {
   font-size: 12px;
 }
 
+button {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:focus { outline: 0; }
+
+.orange-button {
+  /*convert rgb to hexadecimal*/
+  /*color: rgb(230, 238, 211);*/
+  /*background-color: rgb(234, 81, 35);*/
+  color: #E6EED3;
+  background-color: #EA5122;
+  background: linear-gradient(#F9764F, #BC401A);
+  box-shadow: inset 0 1px 1px #FF9A7A;
+  border-color: #DB4B20;
+}
+
+.white-button {
+  color: #EA5122;
+  background-color: #E6EED3;
+  background: linear-gradient(#F9FCF2, #CFD2C6);
+  box-shadow: inset 0 1px 1px #F7F9F2;
+  border-color: #D2D5CC;
+}
+
+.orange-button:hover {
+  background: linear-gradient( #BC401A, #F9764F);
+}
+
+.white-button:hover {
+  background: linear-gradient(#CFD2C6, #F9FCF2);
+}
+
 /*code {
   color: #000;
   overflow-x: scroll;

@@ -45,20 +45,20 @@
 
         <div class="icon-row">
           <div class="icon-wrapper">
-            <div class="hvr-wobble-top">
+            <div class="wobble-top">
               <img src="assets/images/icecream.png" width="120" height="120" />
             </div>
             <p>Wobble</p>
           </div>
           <div class="icon-wrapper">
-            <div class="hvr-hang">
+            <div class="hang">
               <img src="assets/images/crackers.png" width="120" height="120" />
             </div>
             <p>Hang</p>
           </div>
 
           <div class="icon-wrapper">
-            <div class="hvr-rotate">
+            <div class="rotate">
               <img src="assets/images/pizza.png" width="120" height="120" />
             </div>
             <p>Rotate</p>
@@ -67,20 +67,20 @@
 
         <div class="icon-row">
           <div class="icon-wrapper">
-            <div class="hvr-grow">
+            <div class="grow">
               <img src="assets/images/donut.png" width="120" height="120" />
             </div>
             <p>Grow</p>
           </div>
           <div class="icon-wrapper">
-            <div class="hvr-float-shadow">
+            <div class="float-shadow">
               <img src="assets/images/popcorn.png" width="120" height="120" />
             </div>
             <p>Float</p>
           </div>
 
           <div class="icon-wrapper">
-            <div class="hvr-buzz">
+            <div class="buzz">
               <img src="assets/images/cookie.png" width="120" height="120" />
             </div>
             <p>Buzz</p>
@@ -215,17 +215,75 @@
         <h2 id="transition-section" class="extra-padding">Transition Effects</h2>
 
         <h3>Flip</h3>
-        <div class="card-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="card-container">
           <div class="card">
             <div class="card-front"></div>
             <div class="card-back"></div>
           </div>
         </div>
         <p> Is this your card? </p>
+      </div>
+        <button class="toggle-code white-button">show code</button>
+        <div class="show-code">
+          HTML:
+          <pre class="prettyprint">
 
+            &lt;div class="card-container"&gt;
+              &lt;div class="card"&gt;
+                &lt;div class="card-front"&gt;&lt;/div&gt;
+                &lt;div class="card-back"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+          <br><br>
+          CSS:
+          <pre class="prettyprint">
+
+            .card-container {
+              perspective: 1000px;
+              margin: 0 auto;
+            }
+
+            .card-container, .card-front, .card-back {
+              width: 320px;
+              height: 480px;
+            }
+
+            .card-container:hover .card {
+              transform: rotateY(180deg);
+            }
+
+            .card {
+              position: relative;
+              transition: 0.6s;
+              transform-style: preserve-3d;
+            }
+
+            .card-front, .card-back {
+              position: absolute;
+              top: 0;
+              left: 0;
+              backface-visibility: hidden;
+            }
+
+            .card-front {
+              background-image: url('../images/bluecardback.png');
+              background-size: 100% 100%;
+              transform: rotateY(0deg);
+            }
+
+            .card-back {
+              transform: rotateY(180deg);
+              background-image: url('../images/aceofspades.png');
+              background-size: 100% 100%;
+            }
+          </pre>
+          <br><br><br>
+        </div>
+      <div class="content">
         <h3>Slide</h3>
         <div class="container">
-          <div class="door-wrapper">
+          <div class="door-container">
             <div class="door-content">
               <h3 id="visible-message">Open Me!</h3>
               <h3 id="hidden-message">Close Me!</h3>
@@ -233,7 +291,79 @@
             <div class="door-top"></div>
           </div>
         </div>
+      </div>
+      <button class="toggle-code white-button">show code</button>
+      <div class="show-code">
+        HTML:
+        <pre class="prettyprint">
 
+          &lt;div class="door-container"&gt;
+            &lt;div class="door-content"&gt;
+              &lt;h3 id="visible-message"&gt;Open Me!&lt;/h3&gt;
+              &lt;h3 id="hidden-message"&gt;Close Me!&lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="door-top"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        </pre>
+        <br><br>
+        CSS:
+        <pre class="prettyprint">
+
+          .door-container {
+            height: 500px;
+            margin: 0px 200px 100px 200px;
+            position: relative;
+            overflow-x: hidden;
+          }
+
+          .door-content {
+            height: 100%;
+            color: #000;
+            background: #FFF;
+            text-align: center;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, .5) inset;
+          }
+
+          .door-top {
+            background-image: url('../images/GlassDoor.png');
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            transition: left 0.6s ease;
+          }
+
+          .door-container:hover .door-top {
+            left: -100%;
+          }
+
+          .door-container:hover #hidden-message {
+            color: black;
+          }
+
+          .door-container:hover #visible-message {
+            color: rgb(255, 255, 255);
+          }
+
+          #visible-message {
+            margin: 0;
+            padding-top: 175px;
+            transition: 0.6s ease;
+          }
+
+          #hidden-message {
+            margin: 0;
+            padding-top: 125px;
+            color: rgb(255, 255, 255);
+            transition: 0.6s ease;
+          }
+        </pre>
+        <br><br><br>
+      </div>
+      <br><br><br>
     </section>
 
     <section class="white">

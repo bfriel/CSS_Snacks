@@ -27,7 +27,7 @@
 
 
 /* Float Shadow */
-.hvr-float-shadow {
+.float-shadow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -43,7 +43,7 @@
   transition-property: transform;
 }
 
-.hvr-float-shadow:before {
+.float-shadow:before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -61,13 +61,13 @@
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+.float-shadow:hover, .float-shadow:focus, .float-shadow:active {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
 
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+.float-shadow:hover:before, .float-shadow:focus:before, .float-shadow:active:before {
   opacity: 1;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
@@ -76,7 +76,7 @@
 
 
 /* Wobble Top */
-@-webkit-keyframes hvr-wobble-top {
+@-webkit-keyframes wobble-top {
   16.65% {
     -webkit-transform: skew(-12deg);
     transform: skew(-12deg);
@@ -108,7 +108,7 @@
   }
 }
 
-@keyframes hvr-wobble-top {
+@keyframes wobble-top {
   16.65% {
     -webkit-transform: skew(-12deg);
     transform: skew(-12deg);
@@ -140,7 +140,7 @@
   }
 }
 
-.hvr-wobble-top {
+.wobble-top {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -152,9 +152,9 @@
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
 }
-.hvr-wobble-top:hover, .hvr-wobble-top:focus, .hvr-wobble-top:active {
-  -webkit-animation-name: hvr-wobble-top;
-  animation-name: hvr-wobble-top;
+.wobble-top:hover, .wobble-top:focus, .wobble-top:active {
+  -webkit-animation-name: wobble-top;
+  animation-name: wobble-top;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
@@ -164,7 +164,7 @@
 }
 
 /* Hang */
-@-webkit-keyframes hvr-hang {
+@-webkit-keyframes hang {
   0% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
@@ -181,7 +181,7 @@
   }
 }
 
-@keyframes hvr-hang {
+@keyframes hang {
   0% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
@@ -198,21 +198,21 @@
   }
 }
 
-@-webkit-keyframes hvr-hang-sink {
+@-webkit-keyframes hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
 
-@keyframes hvr-hang-sink {
+@keyframes hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
 
-.hvr-hang {
+.hang {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -222,9 +222,9 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-  -webkit-animation-name: hvr-hang-sink, hvr-hang;
-  animation-name: hvr-hang-sink, hvr-hang;
+.hang:hover, .hang:focus, .hang:active {
+  -webkit-animation-name: hang-sink, hang;
+  animation-name: hang-sink, hang;
   -webkit-animation-duration: .3s, 1.5s;
   animation-duration: .3s, 1.5s;
   -webkit-animation-delay: 0s, .3s;
@@ -239,7 +239,7 @@
   animation-direction: normal, alternate;
 }
 
-.hvr-grow {
+.grow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -253,13 +253,13 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.grow:hover, .grow:focus, .grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 /* Glow */
-.hvr-glow {
+.glow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -273,12 +273,12 @@
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
 }
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+.glow:hover, .glow:focus, .glow:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 /* Buzz */
-@-webkit-keyframes hvr-buzz {
+@-webkit-keyframes buzz {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
@@ -290,7 +290,7 @@
   }
 }
 
-@keyframes hvr-buzz {
+@keyframes buzz {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
@@ -302,7 +302,7 @@
   }
 }
 
-.hvr-buzz {
+.buzz {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -312,9 +312,9 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
-  -webkit-animation-name: hvr-buzz;
-  animation-name: hvr-buzz;
+.buzz:hover, .buzz:focus, .buzz:active {
+  -webkit-animation-name: buzz;
+  animation-name: buzz;
   -webkit-animation-duration: 0.15s;
   animation-duration: 0.15s;
   -webkit-animation-timing-function: linear;
@@ -325,7 +325,7 @@
 
 /*ROTATE*/
 
-.hvr-rotate {
+.rotate {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -339,7 +339,7 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+.rotate:hover, .rotate:focus, .rotate:active {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }

@@ -2,44 +2,35 @@
   perspective: 1000px;
   margin: 0 auto;
 }
-/* flip the card when hovered */
-.card-container:hover .card, .card-container.hover .card {
-  transform: rotateY(180deg);
-}
 
 .card-container, .card-front, .card-back {
   width: 320px;
   height: 480px;
 }
 
-/* card speed goes here */
-.card {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
-  position: relative;
+.card-container:hover .card {
+  transform: rotateY(180deg);
 }
 
-/* hide card-back of pane during swap */
+.card {
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
 .card-front, .card-back {
-  backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
+  backface-visibility: hidden;
 }
 
-/* card-front pane, placed above back */
 .card-front {
   background-image: url('../images/bluecardback.png');
   background-size: 100% 100%;
-  color: white;
-  z-index: 2;
-  /*border-radius: 20px;*/
-  /* for firefox 31 */
   transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .card-back {
   transform: rotateY(180deg);
   background-image: url('../images/aceofspades.png');
@@ -90,23 +81,11 @@
 }*/
 
 
-.door-wrapper {
+.door-container {
   height: 500px;
   margin: 0px 200px 100px 200px;
   position: relative;
   overflow-x: hidden;
-}
-
-.door-wrapper:hover .door-top {
-  left: -100%;
-}
-
-.door-wrapper:hover #hidden-message {
-  color: black;
-}
-
-.door-wrapper:hover #visible-message {
-  color: rgb(255, 255, 255);
 }
 
 .door-content {
@@ -115,20 +94,6 @@
   background: #FFF;
   text-align: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .5) inset;
-}
-
-#visible-message {
-  /*vertical-align: middle;*/
- margin: 0;
- padding-top: 175px;
- transition: 0.6s ease;
-}
-
-#hidden-message {
-  margin: 0;
-  padding-top: 125px;
-  color: rgb(255, 255, 255);
-  transition: 0.6s ease;
 }
 
 .door-top {
@@ -141,9 +106,32 @@
   top: 0;
   right: 0;
   transition: left 0.6s ease;
-
 }
 
+.door-container:hover .door-top {
+  left: -100%;
+}
+
+.door-container:hover #hidden-message {
+  color: black;
+}
+
+.door-container:hover #visible-message {
+  color: rgb(255, 255, 255);
+}
+
+#visible-message {
+  margin: 0;
+  padding-top: 175px;
+  transition: 0.6s ease;
+}
+
+#hidden-message {
+  margin: 0;
+  padding-top: 125px;
+  color: rgb(255, 255, 255);
+  transition: 0.6s ease;
+}
 
 /*ROTATE OUT*/
 
