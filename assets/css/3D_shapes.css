@@ -83,12 +83,12 @@
 .cube-container .cube > div { transition: transform 0.2s ease-in; }
 
 .cube-container .front, .back, .top, .bottom, .left, .right  {
-  background-image: url('../images/woodcrate.jpg');
+  background-image: url('https://s3-us-west-1.amazonaws.com/css-snacks/woodcrate.jpg');
   background-size: 100% 100%;
  }
 
  .cube-container .cookie-monster {
-   background-image: url('../images/CookieMonster.png');
+   background-image: url('https://s3-us-west-1.amazonaws.com/css-snacks/CookieMonster.png');
    background-size: 100% 100%;
  }
 

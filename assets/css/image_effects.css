@@ -11,7 +11,7 @@
 .plax-image {
   border: 1px solid black;
   height: 415px;
-  background-image: url('../images/iceclimb.jpg');
+  background-image: url('https://s3-us-west-1.amazonaws.com/css-snacks/iceclimb.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-size: 100% 100%;
