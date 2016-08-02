@@ -422,9 +422,9 @@
 <!-- jQuery only for showing code! -->
 <script type="text/javascript">
   $(".toggle-code").on("click", function () {
-    let $button = $(this);
-    let display = $button.next(".show-code").css("display");
-    let text = $button.text();
+    var $button = $(this);
+    var display = $button.next(".show-code").css("display");
+    var text = $button.text();
     $button.next(".show-code").css("display", toggleDisplay(display));
     $button.text(toggleVal(text));
   });
