@@ -13,8 +13,8 @@
   height: 415px;
   background-image: url('https://s3-us-west-1.amazonaws.com/css-snacks/iceclimb.jpg');
   background-attachment: fixed;
-  background-position: center center;
-  background-size: 100% 100%;
+  background-position: 25% 25%;
+  background-size: cover;
 }
 
 /*BLUR IMAGE*/
